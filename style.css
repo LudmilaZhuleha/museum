@@ -57,10 +57,14 @@ html, body, h1, h2, h3, h4, h5, h6, div, nav, header, footer, menu, main {
       border: 1px solid red;
     
   }
+  img{
+      width: 100%;
+      height: auto;
+  }
   .wrapper {
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;  
-    padding: 74px 40px 76px 40px;
+    padding: 74px 40px 76px 240px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -120,3 +124,501 @@ html, body, h1, h2, h3, h4, h5, h6, div, nav, header, footer, menu, main {
 .nav-link:hover{
     opacity: 0.8;
 }
+.welcome{
+    min-height: 750px;
+    max-width: 1920px;
+    background: black url(assets/img/background.jpg) no-repeat;
+    background-position-x: right;
+    background-size: calc(100% - 705px);
+}
+.welcome-wrapper{
+    width: 598px;
+    max-height: 390px;
+    padding-top: 114px;
+    margin-left: 240px;
+}
+.title{
+    width: 598px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.subtitle{
+    line-height: 33px;
+    letter-spacing: 2px;
+    margin-top: 26px;
+    margin-bottom: 76px;
+}
+.discover{
+    background-color: #710707;
+    border: 0;
+    border-radius: 10px;
+    width: 360px;
+    height: 75px;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+/* Virtual tour start*/
+
+.visiting{
+    width: 1440px;
+    height: 1215px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+}
+.visiting_title{
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    color: #9D8665;
+    position: relative;
+    padding-bottom: 28px;
+}
+.visiting_title::after{
+    display: block;
+    content: '';
+    width: 1440px;
+    height: 3px;
+    background: #710707;
+    border-radius: 0px;
+    position: absolute;
+}
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 78px;
+    padding-top: 75px;
+}
+.cards{
+    width: 440px;
+    height:422px;
+    margin: 0px;
+    position: relative;
+}
+.card{
+    text-decoration: none;
+    background: white;
+    color: #000000;
+    display: block;
+}
+.img-wrapper{
+    padding-bottom: 25px;  
+}
+.card_title{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    position: relative;
+}
+.card_title::after{
+    display: block;
+    content: '';
+    width: 300px;
+    height: 2px;
+    background: #710707;
+    border-radius: 0px;
+    position: absolute;
+}
+.tour_view{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+}
+.google_link{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* Virtual tour end*/
+
+/*Explore start*/
+
+.explore{
+    background-color: black;
+    padding-bottom: 125px;
+}
+.explore_wrapper{
+    width: 1440px;
+    height: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: black;
+}
+.explore_description{
+    display: flex;
+    flex-direction: column;    
+}
+.explore_title{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 28px;
+}
+.explore_title::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 660px;
+    height: 3px;
+    background: #710707;
+    border-radius: 0px;
+}
+.explore_pic{
+    width: 720px;
+    height: 700px;
+    background: url(assets/img/explorepic.png) no-repeat right;
+    background-position-x: right;
+    background-size: cover;
+}
+.explore_text{
+    width: 660px;
+    height: 77px;
+    padding-bottom: 25px;
+    font-size: 22px;
+    line-height: 38px;
+}
+.yellow_text{
+    color:#9D8665;
+}
+/*Explore end*/
+
+/*Video start*/
+
+.video{
+    background-color: #fff;
+}
+.video-wrapper{
+    width: 1440px;
+    height: 1009px;
+    margin: 0 auto;
+    margin-top: 90px;
+    position: relative;
+}
+.playicon{
+    position: absolute;
+    bottom: 564px;
+    left: 610px;
+    width: 220px;
+    height: 220px;
+}
+.video_img{
+    display: block;
+}
+.video-bar{
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    margin-bottom: 40px;
+}
+.video_description{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.video_title{
+    width: 705px;
+    height: 90px;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+    
+}
+.video_info{
+    width: 720px;
+    height: 90px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: black;
+}
+.video_icons{
+    height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 300px;
+    left: 0px;
+}
+.group1{
+    width: 27px;
+    height: 30px;
+    margin-right: 41px;
+}
+.backremote{
+    margin-left: 41px;
+}
+.group4{
+    width: 820px;
+    height: 15px;
+    margin-right: 41px;
+}
+.group5{
+    width: 38px;
+    height: 30px;
+    margin-right: 41px;
+}
+.group6{
+    width: 155px;
+    height: 15px;
+    margin-right: 41px;
+}
+.group7{
+    width: 36px;
+    height: 36px;
+}
+/*Video end*/
+
+/*Tickets styles start*/
+
+.tickets{
+    background-color: black;
+    height: 893px;
+}
+.tickets_wrapper{
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+.tickets_picture{
+    width: 750px;
+    height: 550px;
+    padding-top: 75px;
+}
+.tickets_title{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 28px;
+}
+.tickets_title::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 1440px;
+    height: 3px;
+    background: #710707;
+    border-radius: 0px;
+}
+.ticket_container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 60px;
+    position: relative;
+}
+.tickets_radio, .tickets_amount{
+    padding-top: 75px;
+}
+.tickets_amount{
+    justify-self: flex-end;
+}
+.ticket_radio_title, .ticket_amount_title{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+}
+.ticket_amount_title{
+    padding-bottom: 11px;
+}
+.ticket_radio_title{
+    padding-bottom: 50px;
+}
+.tickets_radio>label{
+    display: inline-block;
+    padding-bottom: 49px;
+}
+label>input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+label>span{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+label>span::before{
+    content: "";
+    display:inline-block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+label>input:checked+span::before{
+    background-color:#710707;
+    border: 3px solid white;
+    width: 20px;
+    height: 20px;
+}
+label>input:checked+span{
+    font-size: 26px;
+}
+.ticket_type{
+    margin: 0 0 14px 0;
+}
+.ticket_counter{
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+.ticket_type_senior{
+    padding-top: 35px;
+}
+.ticket_counter_bold{
+    font-weight: 300;
+    font-size: 32px;
+    cursor: pointer;
+}
+.ticket_counter_bold+span{
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 6px;
+}
+.tickets_total{
+    padding: 50px 0;
+    letter-spacing: 1.65px;
+    margin: 0;
+}
+button{
+    width: 175px;
+    height: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+/*Tickets styles end*/
+
+/*Contacts styles start*/
+.contacts{
+    background-color: white;
+    height: 968px;
+}
+.contacts_container{
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+.contacts_title{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+    position: relative;
+    padding-bottom: 28px;
+}
+.contacts_title::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 1440px;
+    height: 3px;
+    background: #710707;
+    border-radius: 0px;   
+}
+.contacts_content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.contacts_text_title{
+    width: 277px;
+    height: 66px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: black;
+    padding-top: 10px;
+    margin-top: 0;
+}
+.contacts_text_content{
+    width: 282px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 46px;
+    color: black;
+    padding-top: 36px;
+    margin-top: 0;
+}
+.contacts_map{
+    width: 960px;
+    height: 620px;
+    background: url("assets/img/map.png") no-repeat center center;
+    background-size: cover;
+}
+/*Contacts styles end*/
