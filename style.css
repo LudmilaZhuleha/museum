@@ -57,6 +57,12 @@ html, body, h1, h2, h3, h4, h5, h6, div, nav, header, footer, menu, main {
       border: 1px solid red;
     
   }
+  main{
+    border-top: 0;
+  }
+  header{
+      border-bottom: 0;
+  }
   img{
       width: 100%;
       height: auto;
@@ -622,3 +628,98 @@ button{
     background-size: cover;
 }
 /*Contacts styles end*/
+
+/*Footer styles start*/
+
+.footer{
+    background-color: black;
+    height: 300px;
+}
+.footer_wrapper{
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer_title{
+    width: 195px;
+    height: 50px;
+    display: flex;
+    align-items: baseline;
+}
+.footer_icon{
+    background-image: url("assets/img/louvrelogo.png");
+    width: 49px;
+    height: 26px;
+}
+.footer_name{
+    color: white;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    margin-left: 21px;
+}
+.footer_navigation_list{
+    margin: 0;
+    list-style: none;
+    column-count: 2;
+    padding-left: 0;
+}
+.footer_navigation_item{
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer_logo_item{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 24px;
+}
+.footer_logo_item:last-child{
+    margin-right: 0;
+}
+.ico-first{
+    background: url(assets/img/ico-first.png) no-repeat center center;
+    background-size: 50% auto;
+}
+.ico-second{
+    background: url(assets/img/ico-second.png) no-repeat center center;
+    background-size: 50% auto;
+}
+.ico-third{
+    background: url(assets/img/ico-third.png) no-repeat center center;
+    background-size: 50% auto;
+}
+.ico-fourth{
+    background: url(assets/img/ico-fourth.png) no-repeat center center;
+    background-size: 50% auto;
+}
+.ico-fifth{
+    background: url(assets/img/ico-fifth.png) no-repeat center center;
+    background-size: 50% auto;
+}
+.footer_link{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+/*Footer styles end*/
