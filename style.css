@@ -70,7 +70,7 @@ html, body, h1, h2, h3, h4, h5, h6, div, nav, header, footer, menu, main {
   .wrapper {
     max-width: 1920px;
     margin: 0 auto;  
-    padding: 74px 40px 76px 240px;
+    padding: 74px 240px 76px 240px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -131,17 +131,24 @@ html, body, h1, h2, h3, h4, h5, h6, div, nav, header, footer, menu, main {
     opacity: 0.8;
 }
 .welcome{
-    min-height: 750px;
-    max-width: 1920px;
-    background: black url(assets/img/background.jpg) no-repeat;
-    background-position-x: right;
-    background-size: calc(100% - 705px);
+    height: 750px;
+    background-color: black;
 }
 .welcome-wrapper{
-    width: 598px;
-    max-height: 390px;
-    padding-top: 114px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 1920px;
+    height: 100%;
+    padding-top: 76px;
     margin-left: 240px;
+    margin-right: 0;
+    
+}
+.welcome_image{
+    height: 100%;
+     background: url(assets/img/background.jpg) no-repeat;
+     background-size: contain;
 }
 .title{
     width: 598px;
